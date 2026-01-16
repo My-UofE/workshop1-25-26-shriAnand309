@@ -27,5 +27,5 @@ def process_guess(letter, board, word):
     if found:
         print("Nice Work! {letter} is a part of the word")
     else:
-        print("Woops {letter is not part of the word")
+        print("Woops {letter} is not part of the word")
         return False
