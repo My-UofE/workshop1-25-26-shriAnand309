@@ -17,4 +17,15 @@ def check_higher_lower(current_val, next_val, user_input):
 
 # function to be used in game_3: Hangman
 def process_guess(letter, board, word):
-    pass
+    found = False
+
+    for i in range(len(word)):
+        if word[i] == letter:
+            board[i] = letter
+            found = True
+    
+    if found:
+        print("Nice Work! {letter} is a part of the word")
+    else:
+        print("Woops {letter is not part of the word")
+        return False
